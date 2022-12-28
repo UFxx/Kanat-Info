@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #161617;
+    padding: 30px 100px;
+}
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+    width: 6px;               /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;        /* цвет зоны отслеживания */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #4c4c714f;    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER-LOGO */
+
+header h1 {
+    font-family: 'Panchang', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 24px;
+    user-select: none;
+}
+
+header h1 span {
+    color: red;
+    font-family: 'Panchang', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* HEADER-MENU */
+
+header ul {
+    display: flex;
+}
+
+/* .header-menu-list {
+    display: none;
+} */
+
+header ul li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+header ul li  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+/* HEADER-MENU-ACTIVE */
+
+.active a {
+    color: #3895EA;
+}
+
+.active a:hover {
+    color: #3895EA;
+}
+
+/* HEADER-MENU-ICON */
+
+.header-menu-icon img {
+    margin-top: -5px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    padding-left: 60px;
+}
+
+/* CONTENT */
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+/* CONTENT-RIGHT */
+
+.content-right {
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+}
+
+/* CONTENT-LEFT */
+
+.content-left p {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    width: 394px;
+    text-align: center;
+}
+
+/* GROUP */
+
+.group {
+    color: white;
+    padding: 20px 50px 0 0;
+}
+
+.group-title {
+    display: flex;
+    align-items: center;
+    width: 325px;
+    height: 60px;
+    background-color: black;
+}
+
+.group-title h3 {
+    margin-left: 20px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.group-content {
+    padding: 15px 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.group-content-file-name {
+    width: 75px;
+}
+
+.group-content-file-name {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.group-content-file__items a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 24px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+
+.group-content-file__items a:hover {
+    color: white;
+}
+
+.group-content-file__items {
+    margin-top: 5px;
+}

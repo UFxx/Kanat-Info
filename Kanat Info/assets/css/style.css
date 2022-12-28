@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #161617;
+    padding: 30px 100px;
+}
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+    width: 6px;               /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;        /* цвет зоны отслеживания */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #4c4c714f;    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER-LOGO */
+
+header h1 {
+    font-family: 'Panchang', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 24px;
+    user-select: none;
+}
+
+header h1 span {
+    color: red;
+    font-family: 'Panchang', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* HEADER-MENU */
+
+header ul {
+    display: flex;
+}
+
+/* .header-menu-list {
+    display: none;
+} */
+
+header ul li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+header ul li  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+/* HEADER-MENU-ACTIVE */
+
+.active a {
+    color: #3895EA;
+}
+
+.active a:hover {
+    color: #3895EA;
+}
+
+/* HEADER-MENU-ICON */
+
+.header-menu-icon img {
+    margin-top: -5px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    padding-left: 60px;
+}
+
+/* .header-menu-icon img:hover {
+    transform: rotate(90deg);
+}
+
+.header-menu-icon:hover .header-menu-list {
+    position: absolute;
+    display: flex;
+    margin-left: -349px;
+} */
+
+/* CONTENT */
+
+.body-container {
+    padding: 40px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-text p {
+    width: 450px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    line-height: 30px;
+}
+
+.left-text input[type="button"] {
+    background-color: black;
+    color: #3895EA;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: .3s linear;
+}
+
+.left-text input[type="button"]:hover {
+    background-color: rgb(10, 10, 10);
+}
+
+/* CONTENT-PHOTO */
+
+.content-photo {
+    background-color: #111111;
+    border-radius: 23px;
+    width: 300px;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 250px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    padding: 10px 10px;
+}
+
+.content-photo img {
+    height: 350px;
+    border-radius: 26px;
+}
+
+/* BOTTOM-CONTENT */
+
+.bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bottom-content p {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    width: 718px;
+    margin-top: 70px;
+}
+
+.bottom-content input[type="button"] {
+    background-color: black;
+    color: #3895EA;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: .3s linear;
+}
+
+.bottom-content input[type="button"]:hover {
+    background-color: rgb(10, 10, 10);
+}
